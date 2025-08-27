@@ -1,0 +1,13 @@
+<button onclick="copyNumber('999')" 
+  class="flex-1 border rounded-lg px-3 py-2 hover:bg-gray-50">
+  Copy
+</button>
+<script>
+  function copyNumber(number) {
+    navigator.clipboard.writeText(number).then(() => {
+      alert("Number copied: " + number);
+    }).catch(err => {
+      console.error("Failed to copy: ", err);
+    });
+  }
+</script>
