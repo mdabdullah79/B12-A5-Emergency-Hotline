@@ -1,13 +1,34 @@
-<button onclick="copyNumber('999')" 
-  class="flex-1 border rounded-lg px-3 py-2 hover:bg-gray-50">
-  Copy
-</button>
-<script>
-  function copyNumber(number) {
-    navigator.clipboard.writeText(number).then(() => {
-      alert("Number copied: " + number);
-    }).catch(err => {
-      console.error("Failed to copy: ", err);
-    });
-  }
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 2px solid blue;
+            padding: 2px;
+            text-align: center;
+        }
+        #title{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr id="title">
+            <td>getElementById</td>
+            <td>getElementsByClassName</td>
+            <td>querySelector</td>
+            <td>querySelectorAll</td>
+        </tr>
+        <tr>
+            <td>It's returns one element by specific id</td>
+            <td>It's returns multiple element by a class name</td>
+            <td>It's returns first matching element</td>
+            <td>It's returns all matching elements (Node List)</td>
+        </tr>
+    </table>
+</body>
+</html>

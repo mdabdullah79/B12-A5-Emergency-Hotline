@@ -111,6 +111,20 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+    <table border=1 width="100%" cellpadding="50">
+        <tr id="title">
+            <td>getElementById</td>
+            <td>getElementsByClassName</td>
+            <td>querySelector</td>
+            <td>querySelectorAll</td>
+        </tr>
+        <tr>
+            <td>It's returns one element by specific id</td>
+            <td>It's returns multiple element by a class name</td>
+            <td>It's returns first matching element</td>
+            <td>It's returns all matching elements (Node List)</td>
+        </tr>
+    </table>
 2. How do you **create and insert a new element into the DOM**?
 3. What is **Event Bubbling** and how does it work?
 4. What is **Event Delegation** in JavaScript? Why is it useful?
